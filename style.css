@@ -1,0 +1,177 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F5F5DC;
+    color: #333;
+}
+
+header {
+    background;palevioletred:#DB793
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color:aliceblue;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color:aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color:palevioletred:#F0F8FF
+}
+
+.home {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 8%;
+    gap: 30px;
+}
+
+.home-text {
+    max-width: 550px;
+}
+
+.home-text h3 {
+    color:aliceblue;
+    font-size: 22px;
+}
+
+.home-text h1 {
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+.home-text h1 span,
+.heading span {
+    color:palevioletred;
+}
+
+.home-text h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background:palevioletred;#DB7093
+    color:aliceblue;
+    padding: 13px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background:palevioletred;#DB7093
+}
+
+.home-img img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50% 50% 45% 45%;
+    border: 7px solid #e75480;
+    box-shadow: 0 5px 20px #e7a0b5;
+}
+
+.about, .contact {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.heading {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.about-box, .contact-box {
+    background:#DB7093;
+    max-width: 650px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #F0F8FF;
+    text-align: left;
+}
+
+.about-box p, .contact-box p {
+    padding: 12px;
+    border-bottom: 1px solid #DB7093;
+    line-height: 1.6;
+}
+
+.contact-box a {
+    color:#F0F8FF;
+    text-decoration: none;
+}
+
+footer {
+    backgrounde:blue75480;
+    color:#DB7093;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .home-text h1 {
+        font-size: 40px;
+    }
+
+    .home-img img {
+        width: 230px;
+        height: 270px;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+}
+
+
